@@ -1,0 +1,60 @@
+:root {
+    --paavari1: #6495ed;
+    --paavari2: #778899;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.header, .footer {
+    text-align: center;
+    background-color: white;
+}
+
+#headerText {
+    background-image: linear-gradient(var(--paavari2), var(--paavari1));
+    border: 2px solid darkslategrey;
+    border-radius: 32px 32px 0 0;
+}
+
+#footerText {
+    background-image: linear-gradient(var(--paavari1), var(--paavari2));
+    border: 2px solid darkslategrey;
+    margin-top: 20px;
+}
+
+.shadow-around {
+    box-shadow: 2px 2px 5px darkslategrey, -2px 2px 5px darkslategrey, -2px -2px 5px darkslategrey, 2px -2px 5px darkslategrey;
+}
+
+.row-mid {
+    margin-left: 1px;
+    margin-right: 1px;
+    z-index: 0;
+}
+
+.col-side {
+    background-color: var(--paavari2);
+    border: 2px solid darkslategrey;
+    z-index: 2;
+}
+
+.col-left {
+    /* margin-left: 13px; */
+    border-radius: 0 0 0 32px;
+}
+
+.col-right {
+    /* margin-right: 13px; */
+    border-radius: 0 0 32px 0;
+}
+
+.col-center {
+    background-color: var(--paavari1);
+    z-index: 1;
+}
+
+#ansTable td:hover {
+    background-color: chartreuse;
+}
